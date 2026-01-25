@@ -51,7 +51,7 @@ interface Props {
 const base_url = process.env.NEXT_PUBLIC_LIVE_URL;
 
 function InterviewHome(props: Props) {
-  // Use React.use() to unwrap the promises
+  // Use React.use() to unwrap the promises for Client Components
   const params = React.use(props.params);
   const searchParams = React.use(props.searchParams);
 
