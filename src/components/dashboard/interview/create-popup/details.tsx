@@ -261,7 +261,7 @@ function DetailsPopup({
               <input
                 type="number"
                 step="1"
-                max="5"
+                max="30"
                 min="1"
                 className="border-b-2 text-center focus:outline-none  border-gray-500 w-14 px-2 py-0.5 ml-3"
                 value={numQuestions}
@@ -271,8 +271,8 @@ function DetailsPopup({
                     value === "" ||
                     (Number.isInteger(Number(value)) && Number(value) > 0)
                   ) {
-                    if (Number(value) > 5) {
-                      value = "5";
+                    if (Number(value) > 30) {
+                      value = "30";
                     }
                     setNumQuestions(value);
                   }
@@ -284,7 +284,7 @@ function DetailsPopup({
               <input
                 type="number"
                 step="1"
-                max="10"
+                max="60"
                 min="1"
                 className="border-b-2 text-center focus:outline-none  border-gray-500 w-14 px-2 py-0.5 ml-3"
                 value={duration}
@@ -294,8 +294,8 @@ function DetailsPopup({
                     value === "" ||
                     (Number.isInteger(Number(value)) && Number(value) > 0)
                   ) {
-                    if (Number(value) > 10) {
-                      value = "10";
+                    if (Number(value) > 60) {
+                      value = "60";
                     }
                     setDuration(value);
                   }
